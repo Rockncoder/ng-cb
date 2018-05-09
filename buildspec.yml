@@ -13,7 +13,6 @@ phases:
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
-      #- ng test --watch=false
   build:
     commands:
       - echo Build started on `date`
@@ -22,7 +21,6 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-
 artifacts:
   files:
     - '**/*'
