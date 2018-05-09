@@ -13,7 +13,7 @@ phases:
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
-      - npm run test
+      - npm run test --watch=false
   build:
     commands:
       - echo Build started on `date`
