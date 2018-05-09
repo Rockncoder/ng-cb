@@ -3,6 +3,10 @@ version: 0.2
 phases:
   install:
     commands:
+      - echo is node.js live?
+      - node -v
+      - echo is npm live?
+      - npm -v
       - echo Angular CLI & our app
       - npm install -g @angular/cli
       - npm install
