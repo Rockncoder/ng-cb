@@ -7,7 +7,7 @@ phases:
       - node -v
       - echo is npm live?
       - npm -v
-      - echo Angular CLI & our app
+      - echo Angular CLI
       - npm install -g @angular/cli
       - npm install
   pre_build:
