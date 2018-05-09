@@ -22,6 +22,8 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-artifacts:
-  files:
-    - dist/**/*
+      - aws s3 cp --recursive --acl public-read ./dist s3://${SiteBucketName}/
+
+#artifacts:
+#  files:
+#    - dist/**/*
